@@ -20,6 +20,8 @@ const List = ({ contacts, setContacts }) => {
     setContacts(newContacts);
   };
 
+  const updateContact = (e) => {};
+
   return (
     <div className="d-flex flex-column align-items-start mt-5">
       <input
@@ -31,13 +33,15 @@ const List = ({ contacts, setContacts }) => {
         <li className="d-flex align-items-center" key={index}>
           {" "}
           {contact.full_name}
-          <button
-            id={index}
-            onClick={deleteContact}
-            className="mx-5 bg-danger text-white"
-          >
-            Delete
-          </button>{" "}
+          <span>
+            <button
+              id={index}
+              onClick={deleteContact}
+              className="bg-danger text-white"
+            >
+              Delete
+            </button>{" "}
+          </span>
         </li>
       ))}
     </div>
