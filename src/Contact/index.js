@@ -11,6 +11,8 @@ const Contact = () => {
 
   return (
     <div>
+      <br />
+      <hr />
       Contact
       <Form addContacts={setContacts} contacts={contacts} />
       <List contacts={contacts} setContacts={setContacts} />

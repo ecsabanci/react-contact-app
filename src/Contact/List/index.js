@@ -20,7 +20,7 @@ const List = ({ contacts, setContacts }) => {
     setContacts(newContacts);
   };
 
-  const updateContact = (e) => {};
+  // const updateContact = (e) => {};
 
   return (
     <div className="d-flex flex-column align-items-start mt-5">

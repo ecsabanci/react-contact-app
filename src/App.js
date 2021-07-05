@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Users from "./components/Users";
+import User from "./components/User";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/" exact component={Home}></Route>
             <Route path="/about" component={About}></Route>
             <Route path="/users" component={Users}></Route>
+            <Route path="/user/:id" component={User}></Route>
           </Switch>
         </div>
       </Router>
