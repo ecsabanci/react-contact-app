@@ -9,7 +9,8 @@ import {
 import Home from "./components/Home";
 import About from "./components/About";
 import Users from "./components/Users";
-import User from "./components/User";
+// import User from "./components/User";
+import Error404 from "./components/Error404";
 
 export default function App() {
   return (
@@ -53,6 +54,7 @@ export default function App() {
             <Route path="/about" component={About}></Route>
             <Route path="/users" component={Users}></Route>
             {/* <Route path="/user/:id" component={User}></Route> */}
+            <Route path="*" component={Error404}></Route>
           </Switch>
         </div>
       </Router>
